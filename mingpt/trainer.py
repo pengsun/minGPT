@@ -26,6 +26,8 @@ class Trainer:
         C.betas = (0.9, 0.95)
         C.weight_decay = 0.1 # only applied on matmul weights
         C.grad_norm_clip = 1.0
+        # which optimizer to use
+        C.optimizer = 'adamw'
         return C
 
     def __init__(self, config, model, train_dataset):
